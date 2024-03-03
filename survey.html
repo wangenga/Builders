@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <meta content="width=device-width, initial-scale=1.0">
+        <title>SURVEY FORM</title>
+        <link href="style.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <h1 id="title">SCHOOL SURVEY</h1>
+        <p id="description">Help the school understand who you are</p>
+        <form id="survey-form">
+            <fieldset>
+                <label id="name-label" for="name-label">Enter Name </label>
+                <input id="name" type="text" required placeholder="Enter Your Name" >
+                <label id="email-label" for="email-label">Enter Your Email </label>
+                <input id="email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" placeholder="Enter Your Email">
+                <label id="number-label" for="number-label">Year of Study </label>
+                <input id="number" type="number" placeholder="Enter Your Year of Study" min="1" max="6">
+                <label for="school">What School are you in? </label>
+                <select id="dropdown" name="school">
+                    <option value="">select one</option>
+                    <option value="1">Enginerring</option>
+                    <option value="2">Medicine</option>
+                    <option value="3">Education</option>
+                    <option value="4">Music and Arts</option>
+                    <option value="5">Sciences</option>
+                    <option value="6">Languages and Linguistics</option>
+                    <option value="7">Mathematics</option>
+                    <option value="8">Other</option>
+                </select>
+                <fieldset>
+                    <legend>Do you have a student ID?</legend>
+                    <label for ="yes"><input id="yes" type="radio" value="yes" name="ID-present" class="inline" checked>YES</label>
+                    <label for="no"><input id="no" type="radio" value="no" name="ID-present" class="inline">NOPE</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What Clubs are you in?</legend>
+                    <label for="sports"><input id="sports" type="checkbox" value="sports" name="Clubs" class="inline">Sports and Athletics</label>
+                    <label for="red-cross"><input id="red-cross" type="checkbox" value="red-cross" name="Clubs" class="inline">Red-Cross</label>
+                    <label for="tech"><input id="tech" type="checkbox" value="tech" name="Clubs" class="inline">ICT Club</label>
+                    <label for="journalism"><input id="journalism" type="checkbox" value="journalism" name="Clubs" class="inline">JournalismClub</label>
+                    <label for="business"><input id="business" type="checkbox" value="business" name="Clubs" class="inline">Business and E-Commerce</label>
+                    <label for="MUN"><input id="MUN" type="checkbox" value="MUN" name="Clubs" class="inline">Model United Nation</label>
+                    <label for="PA"><input id="PA" type="checkbox" value="PA" name="Clubs" class="inline">Presidential Awards</label>
+                    <label for="Other"><input id="Other" type="checkbox" value="Other" name="Clubs" class="inline">Other</label>
+                </fieldset>
+                <label for="requests">What are some Improvements the School can make to make your academics better?
+                    <textarea id="requests" name="requests" rows="5" cols="50" placeholder="anything..."></textarea>
+                </label>
+                <input id="submit" type="submit" value="Submit">
+            </fieldset>
+        </form>
+    </body>
+</html>
